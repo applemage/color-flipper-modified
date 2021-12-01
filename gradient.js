@@ -16,13 +16,16 @@ btn.addEventListener('click', function(){
         gradientColor2 += hex[getRandomHex()];
     }
     gradient2.textContent = gradientColor2;
+    console.log(gradientColor1);
+    console.log(gradientColor2);
+    console.log(gradient1);
 });
 
 function getRandomHex(){
-    return Math.floor(Math.random() * hex.length)
+    return Math.floor(Math.random() * hex.length);
+    
 }
-
-let generateGrad = () =>{
+function generateGrad(){
     let color1 = gradientColor1;
     let color2 = gradientColor2;
     let angle = Math.floor(Math.random() * 360);
